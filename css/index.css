@@ -1,3 +1,87 @@
-
+body {
+  background-color: var(--Very-dark-blue-main-BG);
+}
+body .card {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-1);
+  color: white;
+}
+body .card__content {
+  background-color: var(--Very-dark-blue-card-BG);
+  padding: 20px;
+  max-width: 20%;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .card__content .cube {
+  max-width: 100%;
+  border-radius: 25px;
+}
+body .card__content h2 {
+  font-size: 25px;
+}
+body .card__content p {
+  color: var(--Soft-blue);
+  font-size: 18px;
+}
+body .card__content .eth {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  letter-spacing: 2px;
+}
+body .card__content .eth__content {
+  display: flex;
+  justify-content: space-between;
+}
+body .card__content .eth__content .price,
+body .card__content .eth__content .days {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+body .card__content .eth__content .price {
+  color: var(--Cyan);
+}
+body .card__content .eth__content .price::before {
+  content: url(/images/icon-ethereum.svg);
+  display: block;
+}
+body .card__content .eth__content .days {
+  color: var(--Soft-blue);
+}
+body .card__content .eth__content .days::before {
+  content: url(/images/icon-clock.svg);
+  display: block;
+}
+body .card__content .eth::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--Soft-blue);
+}
+body .card__content .creator {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+body .card__content .creator img {
+  max-width: 35px;
+}
+body .card__content .creator p {
+  font-weight: 300;
+  color: white;
+}
+body .card__content .creator p strong {
+  font-weight: bold;
+  color: var(--Soft-blue);
+}
 
 /*# sourceMappingURL=index.css.map */
